@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Bellefair;
+    src: url(../fonts/Bellefair-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(../fonts/BarlowCondensed-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --primary-color: #0B0D17;
+    --text-colour: #D0D6F9;
+    --link-colour: #FFFFFF;
+    --heading: Bellefair;
+    --head3font: 56px;
+    --head4font: 32px;
+    --sub-heading: Barlow;
+    --head5font: 24px;
+    --subhead1font: 28px;
+    --subhead2font: 18px;
+    --Navfont: 16px;
+    --bodyfont: 15px;
+    --font-weight: 400;
+    --subhead3font: 14px;
+}
+
+body {
+    background: url(../assets/mobile2.png) no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    gap: 32px;
+    text-align: center;
+}
+
+
+.first {
+    font-family: var(--sub-heading);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 2.700000047683716px;
+    text-align: center;
+    color: var(--link-colour);
+
+}
+
+.faint {
+    color: var(--link-colour);
+    opacity: 25%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+}
+
+.image {
+    width: 327px;
+    height: 223px;
+}
+
+.image2 {
+    display: none;
+}
+
+.image3{
+    display: none;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.navigator {
+    height: 10px;
+    position: relative;
+    margin: auto;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+.link {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    position: relative;
+}
+
+.link>a {
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--link-colour);
+    opacity: 17.44%;
+
+}
+
+.link>a:hover {
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: var(--link-colour);
+    opacity: 50.01%;
+
+}
+
+.link>a:focus {
+    width: 10px;
+    aspect-ratio: 1/1;
+    background-color: var(--link-colour);
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.text1 {
+    font-family: var(--heading);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--link-colour);
+    opacity: 49.52%;
+}
+
+.text2 {
+    font-family: Bellefair;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--link-colour);
+}
+
+.fooot {
+    padding: 6px;
+}
+
+.text3 {
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--text-colour);
+    text-align: center;
+
+}
+
+@media screen and (min-width:760px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 38.5px;
+    }
+
+    .first {
+        font-family: Barlow;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        text-align: left;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0 124px;
+        /* gap: 80px; */
+    }
+
+    .image-container {
+        position: relative;
+        display: block;
+        margin: auto;
+        bottom: 0;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+        width: 433.09px;
+        height: 532px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .foot {
+        gap: 8px;
+    }
+
+    .text1 {
+        font-family: Bellefair;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .text2 {
+        font-family: Bellefair;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 46px;
+
+    }
+
+    .text3 {
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: ; */
+        gap: 154px;
+        padding: 0 166.5px;
+        text-align: left;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        font-family: Barlow;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 4.73px;
+
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-items: baseline;
+        padding: 0;
+    }
+
+    .image2{
+        display: none;
+    }
+
+    .image3 {
+        display: block;
+        height: 654px;
+        width: 453.44px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: left;
+        gap: 120px;
+    }
+
+    .navigator{
+        width: 100%;
+    }
+    .link>a, .link>a:hover, .link>a:focus{
+        width: 15px;
+        aspect-ratio: 1/1;
+    }
+
+    .nnaeeh{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+    .foot {
+        gap: 15px;
+    }
+
+    .text1 {
+        font-family: Bellefair;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 37px;
+
+    }
+
+    .text2 {
+        font-family: Bellefair;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+
+    .text3 {
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Bellefair;
+    src: url(./assets/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: Barlow;
+    src: url(./assets/BarlowCondensed-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+:root{
+    --primary-color: #0B0D17;
+    --text-colour: #D0D6F9;
+    --link-colour: #FFFFFF;
+    --heading: Bellefair;
+    --head1font:150px;
+    --head2font: 100px;
+    --head3font: 56px;
+    --head4font: 32px;
+    --sub-heading: Barlow;
+    --head5font: 23px;
+    --subhead1font: 28px;
+    --subhead2font: 14px;
+    --Navfont: 16px;
+    --bodyfont: 15px;
+}
+
+body{
+    background: url("./assets/mobile1.png") no-repeat;
+    background-size: cover;
+    
+}
+
+main{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 81px;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+.container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ color: var(--text-colour);
+ gap:16px;
+ font-family: var(--sub-heading);
+ font-weight: 400;
+}
+
+.content1{
+    font-size: var(--Navfont);
+    line-height: 19.2px;
+  
+    
+}
+
+.content2{
+    font-size: 80px;
+   
+    line-height: 100px;
+    font-family: var(--heading);
+    color: #FFFFFF;
+}
+
+.content3{
+font-size:var(--bodyfont) ;
+line-height: 25px;
+}
+
+.circle{
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    font-weight: 400;
+    line-height: 22.92px;
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 20px;
+    color: #0B0D17;
+    position: relative;
+}
+
+.circle:hover{
+    outline: 20px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+@media (min-width:768px) {
+
+    body{
+        background: url("./assets2/tablet1.png") no-repeat;
+        background-size: cover;
+        
+    }
+
+    main{
+        padding: 106px 159px 90px;
+    }
+    .container{
+        gap: 24px;
+    }
+    .content1{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .content2{
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .content3{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .circle{
+        width: 242px;
+        font-size: 32px;
+        line-height: 36.67px;
+    }
+    .circle:hover{
+        outline: 60px solid rgba(255, 255, 255, 0.1);
+        
+    }
+
+    @media (min-width:1200px) {
+
+        body{
+            background: url("./assets3/desktop1.png") no-repeat;
+            background-size: cover;
+            
+        }
+
+        main{
+            flex-direction: row;
+            padding: 251px 165px 131px;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        .container{
+            align-items: flex-start;
+            width: 450px;
+            text-align: left;
+        }
+        .content1{
+            font-size: 28px;
+            line-height: 33.6px;
+
+        }
+        .content2{
+            line-height: 171.9px;
+        }
+        .content3{
+            font-size: 18px;
+            line-height: 32px;
+        }
+        .circle{
+            width: 274px;
+            font-size: 32px;
+            line-height: 36.67px;
+        }
+    }
+
+
+}
